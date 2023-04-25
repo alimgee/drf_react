@@ -3,3 +3,6 @@ __pycache__
 db.sqlite3
 */blog/migrations/*
 */blogapi/migrations/*
+*env.py*
+drf_api/env.py
+env.py
