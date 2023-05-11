@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '8000-alimgee-drf-react-6lpjujgf6f.us2.codeanyapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'localhost']
+
+ALLOWED_HOSTS = ['localhost', '8000-alimgee-drfreact-7ipvmg3lxe0.ws-eu97.gitpod.io']
 
 
 # Application definition
@@ -42,7 +44,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'corsheaders',
     "blog",
+    "blogapi",
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +58,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = "core.urls"
