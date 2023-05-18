@@ -30,9 +30,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'localhost']
+#CSRF_TRUSTED_ORIGINS = ['https://8000-alimgee-drfreact-xkgvpgha532.ws-eu97.gitpod.io ', 'localhost']
 
-ALLOWED_HOSTS = ['localhost', '8000-alimgee-drfreact-7ipvmg3lxe0.ws-eu97.gitpod.io']
+#CORS_ALLOW_ALL_ORIGINS=True
+
+ALLOWED_HOSTS = ['localhost', 'alimgee-drfreact-xkgvpgha532.ws-eu97.gitpod.io']
 
 
 # Application definition
