@@ -14,8 +14,10 @@ const Posts = (props) => {
 							// Enterprise card is full width at sm breakpoint
 							<Grid item key={post.id} xs={12} md={4}>
 								<Card >
-									<CardMedia image="https://placehold.co/600x400/png"
+									<img src="https://placehold.co/150x150/png"
 										title="Image title"
+										alt = "test img"
+										style={{marginTop: "1rem"}}
 									/>
 									<CardContent>
 										<Typography
