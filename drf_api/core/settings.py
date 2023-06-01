@@ -34,7 +34,7 @@ DEBUG = True
 
 #CORS_ALLOW_ALL_ORIGINS=True
 
-ALLOWED_HOSTS = ['localhost', 'alimgee-drfreact-xkgvpgha532.ws-eu97.gitpod.io']
+ALLOWED_HOSTS = ['localhost', '8000-alimgee-drf-react-ia5k4e36dw.us2.codeanyapp.com']
 
 
 # Application definition
@@ -61,7 +61,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 ROOT_URLCONF = "core.urls"
@@ -128,8 +128,6 @@ USE_I18N = True
 USE_TZ = True
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-alimgee-drf-react-6lpjujgf6f.us2.codeanyapp.com']
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
@@ -149,5 +147,5 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "https://localhost:3000",
-    'https://3000-alimgee-drfreact-xkgvpgha532.ws-eu97.gitpod.io'
+    'https://3000-alimgee-drf-react-ia5k4e36dw.us2.codeanyapp.com'
 ]

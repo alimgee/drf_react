@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
 		setAppState({ loading: true });
-		const apiUrl = `https://8000-alimgee-drfreact-xkgvpgha532.ws-eu97.gitpod.io/api`;
+		const apiUrl = `https://8000-alimgee-drf-react-ia5k4e36dw.us2.codeanyapp.com/api/`;
 		fetch(apiUrl)
 			.then((data) => data.json())
  
