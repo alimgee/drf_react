@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "blog",
     "blogapi",
     'rest_framework',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -152,3 +153,6 @@ CORS_ALLOWED_ORIGINS = [
     "https://localhost:3000",
     'https://3000-alimgee-drf-react-ia5k4e36dw.us2.codeanyapp.com'
 ]
+
+# Custom user model
+AUTH_USER_MODEL = "users.NewUser"
