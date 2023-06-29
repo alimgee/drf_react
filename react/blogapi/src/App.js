@@ -2,6 +2,7 @@ import React, { useEffect, useState }  from 'react';
 import './App.css';
 import Posts from './components/Posts';
 import PostLoadingComponent from './components/PostLoading';
+import axiosInstance from './Axios';
 
 function App() {
 
@@ -11,17 +12,12 @@ function App() {
 		posts: null,
 	});
 
-  useEffect(() => {
-		setAppState({ loading: true });
-		const apiUrl = `https://8000-alimgee-drf-react-ia5k4e36dw.us2.codeanyapp.com/api/`;
-		fetch(apiUrl)
-			.then((data) => data.json())
- 
-			.then((posts) => {
-				setAppState({ loading: false, posts: posts });
-        console.log({posts})
-			});
-      
+    useEffect(() => {
+		axiosInstance.get().then((res) => {
+			const allPosts = res.data;
+			setAppState({ loading: false, posts: allPosts });
+			console.log(res.data);
+		});
 	}, [setAppState]);
 
 	return (

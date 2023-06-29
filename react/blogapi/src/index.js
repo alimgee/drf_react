@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Header from './components/Header';
 import Footer from './components/Footer';
+import  SignUp  from './components/Register'
+import Login from './components/Login';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const rootElement = document.getElementById("root");
@@ -16,6 +18,9 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<SignUp />} />
+		
       </Routes>
       <Footer />
     </Router>
