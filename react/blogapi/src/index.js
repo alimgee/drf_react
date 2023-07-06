@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import  SignUp  from './components/Register'
 import Login from './components/Login';
+import SignOut from './components/Logout'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const rootElement = document.getElementById("root");
@@ -19,6 +20,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/signin" element={<Login />} />
+        <Route path="/signout" element={<SignOut />} />
         <Route path="/register" element={<SignUp />} />
 		
       </Routes>
