@@ -18,7 +18,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signin" element={<Login />} />
         <Route path="/register" element={<SignUp />} />
 		
       </Routes>
